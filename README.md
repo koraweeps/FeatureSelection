@@ -25,6 +25,7 @@
 * Tend to be less computationaly expensive
 * Usually give lower prediction performance compared to other methods
 * Suitable for quick screen and removed of irrelevant features
+* Note: (-) Ignore the interaction with the classifier and each feature is considered independently thus ignoring feature dependencies
 
 **Main Step Procedure in Filter method**
 * Rank features according to certain criteria: Each feature is ranked independently of the feature space (univariate)
@@ -43,10 +44,13 @@
 * Chi-square 
 * Mutual Information
 * Variance including constant features and quasi-constant features
+  - [Constant features removal - zero variance](https://github.com/solegalli/feature-selection-for-machine-learning/blob/main/03-Constant-Quasi-Constant-Duplicates/03.1-Constant-features.ipynb).
+  - [Quantsi Constant features removel](https://github.com/solegalli/feature-selection-for-machine-learning/blob/main/03-Constant-Quasi-Constant-Duplicates/03.2-Quasi-constant-features.ipynb)
 
 **Multivariate Filter Selection Methods**
 * Handle redundant Feature
 * Duplicate Feature
+  - [Duplicate feature removal](https://github.com/solegalli/feature-selection-for-machine-learning/blob/main/03-Constant-Quasi-Constant-Duplicates/03.3-Duplicated-features.ipynb)
 * Correlated Feature
 
 **Summary of Filter methods**
@@ -54,7 +58,7 @@
 * First step in feature selection procedure
 
 # 1.1 Variance: Constant Feature
-Coding for removing constant feature (zero variance) [Constant features removal](https://github.com/solegalli/feature-selection-for-machine-learning/blob/main/03-Constant-Quasi-Constant-Duplicates/03.1-Constant-features.ipynb).
+
 
 
 # 2. Wrapper Methods
@@ -68,3 +72,7 @@ Coding for removing constant feature (zero variance) [Constant features removal]
 * Perform feature selection as part of model construction process
 * Consider the interaction between features and model
 * Less computationally expensive than wrapper methods, because they fit the machine learning model only once
+
+# Other Popular Methods
+* Boruta SHAP Feature Selection Method
+  - [Boruta SHAP Implementation](https://www.kaggle.com/code/carlmcbrideellis/feature-selection-using-the-boruta-shap-package/notebook)
