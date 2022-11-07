@@ -76,4 +76,4 @@
 # Other Popular Methods
 * Boruta SHAP Feature Selection Method
   - [Boruta SHAP Implementation](https://www.kaggle.com/code/carlmcbrideellis/feature-selection-using-the-boruta-shap-package/notebook)
-  - [Boruta SHAP] (https://blog.kxy.ai/boruta-shap-is-as-bad-as-rfe/)
+  - [Boruta SHAP](https://blog.kxy.ai/boruta-shap-is-as-bad-as-rfe/)
