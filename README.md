@@ -74,6 +74,6 @@
 * Less computationally expensive than wrapper methods, because they fit the machine learning model only once
 
 # Other Popular Methods
-* Boruta SHAP Feature Selection Method
+* Boruta SHAP Feature Selection Method (Wrapper based)
   - [Boruta SHAP Implementation](https://www.kaggle.com/code/carlmcbrideellis/feature-selection-using-the-boruta-shap-package/notebook)
   - [Boruta SHAP](https://blog.kxy.ai/boruta-shap-is-as-bad-as-rfe/)
