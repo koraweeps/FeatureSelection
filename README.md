@@ -19,6 +19,7 @@
 
 # 1. Filter Methods
 * Rely on the characteristics of data (feature characteristics)
+* Features are selected on the basis of their scores in various statistical tests for their correlation with the outcome variable
 * Do not use machine learning algorithms
 * Model agnostic
 * Tend to be less computationaly expensive
@@ -31,8 +32,15 @@
 * Note: may select redundant variables because they do not consider the relationship between features
 
 **Ranking Criteria of filter method: Univariate**
-* Chi-square | Fisher Score
-* Univariate parametric tests (ANOVA)
+
+![image](https://user-images.githubusercontent.com/117054438/200222116-81394bc8-917d-4d1b-bcf1-aa3232f91d1a.png)
+
+* Pearson’s correlation coefficient (linear)
+* Spearman’s rank coefficient (nonlinear)
+* Univariate parametric tests (ANOVA) (linear) 
+* Fisher Score
+* Kendall’s rank coefficient (nonlinear)
+* Chi-square 
 * Mutual Information
 * Variance including constant features and quasi-constant features
 
@@ -46,6 +54,7 @@
 * First step in feature selection procedure
 
 # 1.1 Variance: Constant Feature
+Coding for removing constant feature (zero variance) [Constant features removal](https://github.com/solegalli/feature-selection-for-machine-learning/blob/main/03-Constant-Quasi-Constant-Duplicates/03.1-Constant-features.ipynb).
 
 
 # 2. Wrapper Methods
